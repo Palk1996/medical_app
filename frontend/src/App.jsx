@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Footer from './components/Footer';
+import SignInPage from './pages/SignInPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Homepage />} />
+            <Route path="/signin" element={<SignInPage />} />
           </Routes>
           
         </div>
